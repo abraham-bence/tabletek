@@ -1,0 +1,39 @@
+.Succes {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .content {
+    width: 50vw;
+    margin: 5vw auto;
+    text-align: center;
+  }
+  .circle {
+    stroke-dasharray: 1194;
+    stroke-dashoffset: 1194;
+    animation: dc 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  .tick {
+    stroke-dasharray: 350;
+    stroke-dashoffset: 350;
+    animation: dt 0.8s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.95s;
+  }
+  @keyframes dc {
+    from {
+      stroke-dashoffset: 1194;
+    }
+    to {
+      stroke-dashoffset: 2388;
+    }
+  }
+  @keyframes dt {
+    from {
+      stroke-dashoffset: 350;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
